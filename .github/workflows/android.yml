@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate Wrapper & Build APK
         run: |
-          gradle wrapper
+          gradle wrapper --gradle-version 8.4
           chmod +x gradlew
           ./gradlew assembleDebug
 
